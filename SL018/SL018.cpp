@@ -446,11 +446,11 @@ void printArrayAscii(byte array[], byte len)
     char c = array[i++];
     if (c < 0x20 || c > 0x7e)
     {
-      Serial.print('.');
+      return('.');
     }
     else
     {
-      Serial.print(char(c));
+      return(char(c));
     }
   }
 }
